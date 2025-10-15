@@ -42,7 +42,7 @@ public class PlannerServiceImpl implements PlannerService {
                             + "Each task in the array must be a JSON object with these exact keys: "
                             + "'taskName' (string), 'taskDescription' (string), 'startDate' (string, YYYY-MM-DD), "
                             + "'endDate' (string, YYYY-MM-DD), and 'status' (string, 'PENDING' or 'COMPLETED').\n"
-                            + "Goal: " + goal);
+                            + "Goal: " + goal+ "start date: "+ LocalDate.now());
 
             JSONArray partsArray = new JSONArray();
             partsArray.put(textPart);
